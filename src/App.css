@@ -11,7 +11,7 @@ html, body {
   font-size: 14px;
   font-weight: 400;
   background-image: url(/src/N.png);
-  background-size:contain;
+  background-size:cover;
 }
 
 .link {
@@ -176,4 +176,24 @@ html, body {
   margin-left: 45%;
   margin-top: 50px;
   
+}
+
+.trailer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.description{
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 120px;
+  margin-left: 50px;
+}
+.vid{
+  margin-top: 50px;
+  margin-right: 50px;
+  
+}
+.me-auto{
+  text-decoration: none;
 }

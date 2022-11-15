@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Modal,Button,Form,Row,Col} from 'react-bootstrap'
 import StarRatingComponent from 'react-star-rating-component';
 
-const Add = ({show,handleClose,addMovie}) => {
+const Add = ({show,handleClose,addMovie,}) => {
     const [newMovie,setNewMovie]=useState({
       title:"",
       duration:"",
@@ -13,7 +13,8 @@ const Add = ({show,handleClose,addMovie}) => {
 
     })
     const onStarClick=(nextValue, prevValue, name)=> {
-        setNewMovie({...newMovie,rate:nextValue});
+        setNewMovie({...newMovie,rate:nextValue})
+        // setRate(nextValue)
       }
       const handleChange=(e)=>{
         setNewMovie({...newMovie,[e.target.name]:e.target.Value})
@@ -57,7 +58,7 @@ const Add = ({show,handleClose,addMovie}) => {
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridState">
-          <Form.Label>State</Form.Label>
+          <Form.Label>Genre</Form.Label>
           <Form.Control as="select" defaultValue="Choose genre" onChange={handleChange} name="genre">
             <option>Action</option>
             <option>Animation</option>

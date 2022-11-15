@@ -14,6 +14,7 @@ const Search = ({search,setRate,newRate}) => {
           starCount={5}
           Value={newRate}
           onStarClick={onStarClick}
+          starColor={'gold'}
         />
     </div>
   )
